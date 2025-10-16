@@ -4,13 +4,11 @@
   status = 200
 
 [build]
-  [build]
   command = "npm ci --legacy-peer-deps && npm run build"
   publish = "dist"
 
-
 [build.environment]
   NODE_VERSION = "18"
-  NPM_FLAGS = "--legacy-peer-deps"
+
 
 
