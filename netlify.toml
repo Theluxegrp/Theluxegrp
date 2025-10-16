@@ -4,9 +4,10 @@
   status = 200
 
 [build]
-  command = "npm run build"
+  [build]
+  command = "npm ci --legacy-peer-deps && npm run build"
   publish = "dist"
-  ignore = "git diff --quiet HEAD^ HEAD ./"
+
 
 [build.environment]
   NODE_VERSION = "18"
